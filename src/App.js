@@ -4,7 +4,7 @@ import Dashboard from "./components/Dashboard";
 import "./styles.css";
 
 function App() {
-  const [activeView, setActiveView] = useState("home");
+  const [activeView, setActiveView] = useState("dashboard");
 
   return (
     <div className="app">
