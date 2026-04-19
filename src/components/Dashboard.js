@@ -44,7 +44,7 @@ const Dashboard = () => {
   return (
     <div style={{ padding: "20px" }}>
       <h1>Technical Pattern Viewer</h1>
-
+      <p style={{ maxWidth: "600px", color: "#ccc" }}>Technical patterns are price patterns in security prices that presage future price changes. They can be grouped into two categories: bullish and bearish. Patterns observed in end-of-day security prices of the 30 components of the Dow Jones Index observed over past 5 years are displayed below. If a security has more than one occurrence of a pattern, the most recent occurrence is shown.</p>   
       <PatternSelector
         patterns={patterns}
         selected={pattern}
