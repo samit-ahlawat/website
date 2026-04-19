@@ -19,6 +19,8 @@ const patternDescriptions = {
     "The Cup and Handle is a bullish continuation pattern that resembles a rounded bottom (cup) followed by a consolidation phase (handle). It typically signals a breakout to the upside after the handle forms.",
   double_top:   
       "A double top is a bearish technical reversal pattern that signals the end of an uptrend and a potential shift to a downtrend. It resembles the letter M, featuring two consecutive peaks at similar price levels separated by a moderate trough (the neckline). It indicates that buyers have failed twice to push prices higher, signaling exhaustion and increased selling pressure",
+  double_bottom:
+      "A double bottom pattern is a bullish technical analysis reversal pattern, forming a W shape on a price chart after a downtrend. It consists of two distinct, consecutive lows at roughly the same price level, suggesting that selling pressure is exhausted and a new uptrend is beginning. It indicates a shift from a bearish to a bullish market sentiment.",
 };
 
 const Dashboard = () => {
@@ -26,7 +28,7 @@ const Dashboard = () => {
   const [datasets, setDatasets] = useState([]);
 
   // manually define available patterns
-  const patterns = ["cup_and_handle", "double_top"];
+  const patterns = ["cup_and_handle", "double_top", "double_bottom"];
 
   const handleChange = async (selectedPattern) => {
     setPattern(selectedPattern);
