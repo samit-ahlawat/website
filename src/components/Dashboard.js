@@ -54,7 +54,7 @@ const Dashboard = () => {
       {pattern && (
         <div style={{ marginTop: "15px" }}>
         <h3 style={{ marginBottom: "5px" }}>
-            {pattern.replaceAll("_", " ")}
+            {pattern.replaceAll("_", " ").replace(/\b\w/g, (char) => char.toUpperCase())}
         </h3>
         <p className="description">
             {patternDescriptions[pattern]}
