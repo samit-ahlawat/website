@@ -21,6 +21,10 @@ const patternDescriptions = {
       "A double top is a bearish technical reversal pattern that signals the end of an uptrend and a potential shift to a downtrend. It resembles the letter M, featuring two consecutive peaks at similar price levels separated by a moderate trough (the neckline). It indicates that buyers have failed twice to push prices higher, signaling exhaustion and increased selling pressure",
   double_bottom:
       "A double bottom pattern is a bullish technical analysis reversal pattern, forming a W shape on a price chart after a downtrend. It consists of two distinct, consecutive lows at roughly the same price level, suggesting that selling pressure is exhausted and a new uptrend is beginning. It indicates a shift from a bearish to a bullish market sentiment.",
+  rising_triangle:
+      "Rising triangle is a bullish technical analysis pattern signaling a continuation of an uptrend. It consists of a horizontal resistance line connecting equal highs and a rising diagonal trendline connecting higher lows, indicating increasing buying pressure that usually breaks upward.",
+  descending_triangle:
+      "A descending triangle is a bearish technical pattern that signals a continuation of a downward trend, characterized by a horizontal lower support line and a descending upper trendline. It indicates that selling pressure is increasing and buyers are weakening, usually resulting in a price breakdown below the support level.",
 };
 
 const Dashboard = () => {
@@ -28,7 +32,7 @@ const Dashboard = () => {
   const [datasets, setDatasets] = useState([]);
 
   // manually define available patterns
-  const patterns = ["cup_and_handle", "double_top", "double_bottom"];
+  const patterns = ["cup_and_handle", "double_top", "double_bottom", "rising_triangle", "descending_triangle"];
 
   const handleChange = async (selectedPattern) => {
     setPattern(selectedPattern);
