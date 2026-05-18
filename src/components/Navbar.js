@@ -8,6 +8,7 @@ const Navbar = ({ setActiveView }) => {
 
       <ul className="nav-links">
         <li onClick={() => setActiveView("dashboard")}>Technical Patterns</li>
+        <li onClick={() => setActiveView("earnings")}>Earnings</li>
         <li>Profile</li>
       </ul>
     </nav>
