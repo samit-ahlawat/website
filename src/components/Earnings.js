@@ -30,15 +30,6 @@ const earningsLinks = {
   XOM: "https://corporate.exxonmobil.com/investors",
 };
 
-const getValueClass = (value) => {
-  if (typeof value !== "string") return "";
-
-  if (value.includes("+")) return "positive";
-  if (value.includes("-")) return "negative";
-
-  return "";
-};
-
 const rows = [
 {
   stock: "AXP",
