@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Dashboard from "./components/Dashboard";
+import Earnings from "./components/Earnings";
 import "./styles.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navbar setActiveView={setActiveView} />
 
       {activeView === "dashboard" && <Dashboard />}
+      {activeView === "earnings" && <Earnings />}
     </div>
   );
 }
