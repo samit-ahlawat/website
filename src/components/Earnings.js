@@ -358,16 +358,16 @@ const rows = [
   },
   {
     stock: "WMT",
-    date: "May 21, 2026 (Est.)",
-    rev: "-",
-    income: "-",
-    guidance: "-",
-    revChange: "-",
-    incomeChange: "-",
-    sentiment: "-",
-    pos: "-",
-    neu: "-",
-    neg: "-",
+    date: "May 21, 2026",
+    rev: "Exceeded",
+    income: "Exceeded",
+    guidance: "Reducing",
+    revChange: "+7.4% ($177.75B)",
+    incomeChange: "+18.8% ($5.33B)",
+    sentiment: "Neutral",
+    pos: "30",
+    neu: "2",
+    neg: "0",
   },
   {
     stock: "XOM",
@@ -451,6 +451,8 @@ const Earnings = () => {
                   className={
                     row.guidance.includes("Increasing")
                       ? "positive"
+                      : row.guidance.includes("Reducing")
+                      ? "negative"
                       : "neutral"
                   }
                 >
