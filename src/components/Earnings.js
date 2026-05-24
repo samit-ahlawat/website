@@ -348,7 +348,7 @@ const rows = [
     date: "Apr 27, 2026",
     rev: "Missed",
     income: "Exceeded",
-    guidance: "Increasing (EPS)",
+    guidance: "Increasing",
     revChange: "+2.9% ($34.44B)",
     incomeChange: "+7.6% ($4.8B)",
     sentiment: "Positive",
