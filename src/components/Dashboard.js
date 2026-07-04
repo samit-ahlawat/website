@@ -68,7 +68,7 @@ const Dashboard = () => {
 
       <div className="chart-grid">
         {datasets.map((dataset) => (
-          <div>
+          <div key={dataset.name}>
           <h2>{dataset.name}</h2>        
           <ResponsiveContainer width="100%" height={300}>
             <LineChart data={dataset.data}>
