@@ -36,11 +36,34 @@ body {
 
 .nav-links li {
   cursor: pointer;
-  transition: color 0.2s;
+  color: #94a3b8;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  padding: 8px 16px;
+  border-radius: 6px;
 }
 
 .nav-links li:hover {
+  color: #f1f5f9;
+  background-color: rgba(30, 41, 59, 0.5);
+}
+
+.nav-links li.active {
   color: #38bdf8;
+  background-color: #1e293b;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+}
+
+.nav-links li.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background: linear-gradient(90deg, #38bdf8, #00f5d4);
+  border-radius: 2px;
 }
 
 /* Dashboard */
@@ -201,3 +224,40 @@ h1, h2, h3 {
   color: #ffffff !important;
   font-weight: 600;
 }
+
+/* Period Tabs inside Earnings Summary */
+.period-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #020617;
+  padding: 4px;
+  border-radius: 8px;
+  width: fit-content;
+  border: 1px solid #1e293b;
+}
+
+.period-btn {
+  background: transparent;
+  color: #94a3b8;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.period-btn:hover {
+  color: #f1f5f9;
+}
+
+.period-btn.active {
+  background-color: #38bdf8;
+  color: #020617;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.3);
+}
+
+

@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="app">
-      <Navbar setActiveView={setActiveView} />
+      <Navbar activeView={activeView} setActiveView={setActiveView} />
 
       {activeView === "dashboard" && <Dashboard />}
       {activeView === "earnings" && <Earnings />}
